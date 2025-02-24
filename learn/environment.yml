@@ -335,4 +335,4 @@ dependencies:
   - zstandard=0.19.0=py311hd4cff14_0
   - zstd=1.5.7=hb8e6e7a_1
 
-prefix: "~/Public/pythoning_stuff/learn/virt_env"
+prefix: "./learn/virt_env"
