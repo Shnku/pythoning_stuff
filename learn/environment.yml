@@ -1,7 +1,8 @@
-name: 
+name: virt_env
 channels:
   - conda-forge
 dependencies:
+  - python=3.11 #python version
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - aiohappyeyeballs=2.4.6=pyhd8ed1ab_0
