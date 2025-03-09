@@ -1,4 +1,10 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "matchingDocuments",
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "files.autoSave": "afterDelay",
 }
