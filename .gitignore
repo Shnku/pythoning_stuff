@@ -1,1 +1,10 @@
 learn/virt_env/*
+learn/virtenv/*
+learn/venv/*
+learn/myenv/*
+cvisiontrack/venv/*
+cvisiontrack/virtenv/*
+cvisiontrack/myenv/*
+mathml/venv/*
+mathml/virtenv/*
+mathml/myenv/*
