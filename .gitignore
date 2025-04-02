@@ -1,3 +1,5 @@
 learn/virt_env/*
-cvisiontrack/virtenv/*
-
+cvisiontrack/virtenv
+cvisiontrack/.mypy_cache
+mathml/venv
+.mypy_cache
