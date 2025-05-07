@@ -8,3 +8,8 @@ cvisiontrack/myenv/*
 mathml/venv/*
 mathml/virtenv/*
 mathml/myenv/*
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+venv
+.virtual_documents
