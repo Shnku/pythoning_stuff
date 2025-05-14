@@ -14,3 +14,6 @@ Must use :
 
 **note:** 
 if the lsp extension not work install inside jupyterlab
+
+> [!CAUTION]
+> `jupyter_contrib_nbextensions` causing problem with nbconvert
