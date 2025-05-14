@@ -1,15 +1,14 @@
-learn/virt_env/*
-learn/virtenv/*
-learn/venv/*
-learn/myenv/*
-cvisiontrack/venv/*
-cvisiontrack/virtenv/*
-cvisiontrack/myenv/*
-mathml/venv/*
-mathml/virtenv/*
-mathml/myenv/*
+*venv
+*/venv
+*virt_env
+*/virt_env
+*virtenv
+*/virtenv
 
-.ipynb_checkpoints
+*.ipynb_checkpoints
 */.ipynb_checkpoints
-venv
-.virtual_documents
+*.virtual_documents
+*/.virtual_documents
+
+*.ruff_cache
+*.mypy_cache
