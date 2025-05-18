@@ -12,3 +12,9 @@
 
 *.ruff_cache
 *.mypy_cache
+*.jupyter
+*/.jupyter
+*.ipython
+*/.ipython
+*jupyter-ai-logs
+*/jupyter-ai-logs

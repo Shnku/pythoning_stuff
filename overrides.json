@@ -1,0 +1,311 @@
+{
+  "jupyterlab-rise:plugin": {
+    "autolaunch": false,
+    "enable_chalkboard": true,
+    "start_slideshow_at": "beginning",
+    "auto_select": "code",
+    "show_buttons_on_startup": true,
+    "header": "",
+    "footer": "",
+    "backimage": true,
+    "overlay": "",
+    "theme": "sky",
+    "transition": "linear",
+    "height": "100%",
+    "controls": true,
+    "progress": true,
+    "history": true,
+    "scroll": true,
+    "center": true,
+    "auto_select_timeout": 450,
+    "restore_timeout": 500,
+    "async_timeout": 250,
+    "slideNumber": true,
+    "width": "80%"
+  },
+  "@jupyterlab/toc-extension:registry": {
+    "maximalDepth": 4,
+    "numberingH1": false,
+    "numberHeaders": false,
+    "includeOutput": true,
+    "syncCollapseState": false,
+    "baseNumbering": 1
+  },
+  "@jupyterlab/terminal-extension:plugin": {
+    "fontFamily": "monospace",
+    "fontSize": 13,
+    "lineHeight": 1,
+    "theme": "inherit",
+    "screenReaderMode": false,
+    "scrollback": 1000,
+    "shutdownOnClose": true,
+    "closeOnExit": true,
+    "pasteWithCtrlV": true,
+    "macOptionIsMeta": false,
+    "cursorBlink": true
+  },
+  "@jupyterlab/notebook-extension:tracker": {
+    "codeCellConfig": {
+      "lineNumbers": false,
+      "lineWrap": false,
+      "autoClosingBrackets": true
+    },
+    "markdownCellConfig": {
+      "lineNumbers": false,
+      "matchBrackets": false,
+      "autoClosingBrackets": true
+    },
+    "rawCellConfig": {
+      "lineNumbers": false,
+      "matchBrackets": false,
+      "autoClosingBrackets": true
+    }
+  },
+  "@jupyterlab/latex:plugin": {
+    "synctex": false
+  },
+  "@jupyterlab/filebrowser-extension:browser": {
+    "navigateToCurrentDirectory": true,
+    "useFuzzyFilter": true,
+    "filterDirectories": true,
+    "showLastModifiedColumn": true,
+    "showFileSizeColumn": false,
+    "showHiddenFiles": true,
+    "showFileCheckboxes": false,
+    "showFullPath": false,
+    "sortNotebooksFirst": true,
+    "singleClickNavigation": true
+  },
+  "@jupyterlab/extensionmanager-extension:plugin": {
+    "disclaimed": true
+  },
+  "@jupyterlab/apputils-extension:themes": {
+    "adaptive-theme": false,
+    "overrides": {
+      "code-font-family": null,
+      "code-font-size": null,
+      "content-font-family": null,
+      "content-font-size1": null,
+      "ui-font-family": null,
+      "ui-font-size1": null
+    },
+    "preferred-dark-theme": "JupyterLab Dark",
+    "preferred-light-theme": "JupyterLab Light",
+    "theme": "JupyterLab Night",
+    "theme-scrollbars": true
+  },
+  "@jupyterlab/apputils-extension:notification": {
+    "fetchNews": "false"
+  },
+  "@jupyterlab-contrib/spellchecker:plugin": {
+    "checkComments": true,
+    "checkStrings": false,
+    "debounceTime": 200,
+    "ignore": [
+      "JupyterLab",
+      "Jupyter",
+      "JupyterHub",
+      "Voilà",
+      "Xeus",
+      "IPython"
+    ],
+    "language": "en_US",
+    "mimeTypes": [
+      "text/plain",
+      "text/x-ipythongfm",
+      "text/x-rst",
+      "text/x-latex",
+      "text/x-ipython",
+      "text/x-rsrc"
+    ],
+    "onlineDictionaries": [],
+    "theme": "background-box"
+  },
+  "@jupyter-widgets/jupyterlab-manager:plugin": {
+    "saveState": false
+  },
+  "@deathbeds/jupyterlab-fonts:fonts": {
+    "styles": {
+      ":root": {
+        "--jp-code-font-family": "JetBrains Mono",
+        "--jp-code-font-size": "14px"
+      }
+    },
+    "enabled": true,
+    "version": "v1",
+    "fonts": {},
+    "fontLicenses": {}
+  },
+  "@jupyterlab/lsp-extension:plugin": {
+    "activate": "on",
+    "language_servers": {
+      "pylsp": {
+        "serverSettings": {
+          "pylsp.plugins.pydocstyle.enabled": true,
+          "pylsp.plugins.pyflakes.enabled": false,
+          "pylsp.plugins.flake8.enabled": true
+        },
+        "plugins": {
+          "ruff": {
+            "enabled": true,
+            "formatEnabled": true,
+            "executable": "<path-to-ruff-bin>",
+            "config": "<path_to_custom_ruff_toml>",
+            "extendSelect": [
+              "I"
+            ],
+            "extendIgnore": [
+              "C90"
+            ],
+            "format": [
+              "I"
+            ],
+            "severities": {
+              "D212": "I"
+            },
+            "unsafeFixes": false,
+            "lineLength": 88,
+            "exclude": [
+              "__about__.py"
+            ],
+            "select": [
+              "F"
+            ],
+            "ignore": [
+              "D210"
+            ],
+            "perFileIgnores": {
+              "__init__.py": "CPY001"
+            },
+            "preview": false,
+            "targetVersion": "py310"
+          }
+        }
+      }
+    },
+    "logAllCommunication": false,
+    "setTrace": "messages"
+  },
+  "@jupyterlab/docmanager-extension:plugin": {
+    "autosave": true,
+    "autosaveInterval": 120,
+    "renameUntitledFileOnSave": true
+  },
+  "@jupyterlab/fileeditor-extension:plugin": {
+    "editorConfig": {
+      "autoClosingBrackets": true,
+      "codeFolding": true
+    },
+    "scrollPastEnd": true,
+    "toolbar": []
+  },
+  "@jupyterlab/console-extension:tracker": {
+    "interactionMode": "notebook",
+    "showAllKernelActivity": false,
+    "promptCellConfig": {
+      "autoClosingBrackets": true,
+      "codeFolding": true,
+      "lineNumbers": false
+    }
+  },
+  "@jupyterlab/codemirror-extension:plugin": {
+    "defaultConfig": {
+      "autoClosingBrackets": true,
+      "codeFolding": true,
+      "highlightActiveLine": true
+    }
+  },
+  "jupyterlab_code_formatter:settings": {
+    "preferences": {
+      "default_formatter": {
+        "python": [
+          "isort",
+          "black"
+        ],
+        "R": "formatR",
+        "rust": "rustfmt",
+        "c++11": "astyle"
+      }
+    },
+    "black": {
+      "line_length": 88,
+      "string_normalization": true
+    },
+    "yapf": {
+      "style_config": "google"
+    },
+    "autopep8": {},
+    "isort": {
+      "multi_line_output": 3,
+      "include_trailing_comma": true,
+      "force_grid_wrap": 0,
+      "use_parentheses": true,
+      "ensure_newline_before_comments": true,
+      "line_length": 88
+    },
+    "formatR": {
+      "indent": 2,
+      "arrow": true,
+      "wrap": true,
+      "width_cutoff": 150
+    },
+    "styler": {},
+    "formatOnSave": true,
+    "cacheFormatters": false,
+    "astyle": {
+      "args": []
+    },
+    "ruff": {
+      "args": [
+        "--select=I001"
+      ]
+    },
+    "ruffformat": {
+      "args": []
+    },
+    "suppressFormatterErrors": true,
+    "suppressFormatterErrorsIFFAutoFormatOnSave": false
+  },
+  "@jupyterlab/completer-extension:manager": {
+    "availableProviders": {
+      "lsp": 1000,
+      "CompletionProvider:context": 500,
+      "CompletionProvider:kernel": 550
+    },
+    "providerTimeout": 1000,
+    "showDocumentationPanel": true,
+    "autoCompletion": true,
+    "suppressIfInlineCompleterActive": false
+  },
+  "@jupyterlab/completer-extension:inline-completer": {
+    "editorResizeDelay": 1000,
+    "maxLines": 0,
+    "minLines": 0,
+    "providers": {
+      "@jupyterlab/inline-completer:history": {
+        "enabled": true,
+        "autoFillInMiddle": true,
+        "timeout": 5000,
+        "debouncerDelay": 0,
+        "maxSuggestions": 100
+      },
+      "@jupyterlab/jupyter-ai": {
+        "enabled": true,
+        "timeout": 5000,
+        "debouncerDelay": 250,
+        "triggerKind": "any",
+        "maxPrefix": 10000,
+        "maxSuffix": 10000,
+        "disabledLanguages": [
+          "ipythongfm"
+        ],
+        "streaming": "manual"
+      }
+    },
+    "reserveSpaceForLongest": false,
+    "showShortcuts": true,
+    "showWidget": "onHover",
+    "streamingAnimation": "uncover",
+    "suppressIfTabCompleterActive": true
+  }
+}

@@ -1,7 +1,0 @@
-{
-    "defaultConfig": {
-        "autoClosingBrackets": true,
-        "codeFolding": true,
-        "highlightActiveLine": true
-    }
-}
