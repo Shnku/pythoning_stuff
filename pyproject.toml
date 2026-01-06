@@ -5,6 +5,7 @@ description = "Mainly Jupyter auto-complete lsp suggation config"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "anywidget[dev,esm]>=0.9.18",
     "basedpyright>=1.36.1",
     "black>=25.1.0",
     "ipykernel>=6.29.5",

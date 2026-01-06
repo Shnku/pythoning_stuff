@@ -4,5 +4,24 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"[python]": {
+			"diffEditor.ignoreTrimWhitespace": false,
+			"editor.defaultColorDecorators": "never",
+			"editor.formatOnType": true,
+			"editor.wordBasedSuggestions": "matchingDocuments",
+			"editor.defaultFormatter": "charliermarsh.ruff"
+		},
+		"python.analysis.autoSearchPaths": false,
+		"python.analysis.autoIndent": false,
+		"files.autoSave": "afterDelay",
+		"basedpyright.analysis.typeCheckingMode": "basic",
+		"basedpyright.analysis.inlayHints.callArgumentNamesMatching": true,
+		"python.venvFolders": [
+			"./.venv"
+		],
+		"ruff.lint.preview": true,
+		"ruff.nativeServer": true,
+		"ruff.trace.server": "messages",
+	}
 }
